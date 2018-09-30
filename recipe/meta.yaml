@@ -9,31 +9,33 @@ package:
 source:
   fn: dtt_{{ version }}.tar.gz
   url:
-    - https://cran.r-project.org/src/contrib/dtt_{{ version }}.tar.gz
-    - https://cran.r-project.org/src/contrib/Archive/dtt/dtt_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/dtt_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/Archive/dtt/dtt_{{ version }}.tar.gz
   sha256: b6ee86fb571b3ee04ac1d8d04fbc76b12515c09afee688d56a4f39ea63910f59
 
 build:
-  number: 0
+  merge_build_host: True  # [win]
+  number: 1
   skip: true  # [win32]
-
   rpaths:
     - lib/R/lib/
     - lib/
+
 requirements:
   build:
+    - {{posix}}zip               # [win]
+  host:
     - r-base
-
   run:
     - r-base
 
 test:
   commands:
-    - $R -e "library('dtt')"  # [not win]
+    - $R -e "library('dtt')"           # [not win]
     - "\"%R%\" -e \"library('dtt')\""  # [win]
 
 about:
-  home: https://cran.r-project.org/package=dtt
+  home: http://www.r-project.org, http://www.komsta.net/
   license: GPL (>= 2)
   summary: This package provides functions for 1D and 2D Discrete Cosine Transform (DCT), Discrete
     Sine Transform (DST) and Discrete Hartley Transform (DHT).
@@ -43,9 +45,10 @@ about:
 
 extra:
   recipe-maintainers:
+    - CurtLH
     - johanneskoester
     - bgruening
     - daler
     - jdblischak
     - cbrueffer
-    - CurtLH
+    - dbast
