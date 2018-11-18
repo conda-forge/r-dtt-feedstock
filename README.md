@@ -14,9 +14,8 @@ Summary: This package provides functions for 1D and 2D Discrete Cosine Transform
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-dtt-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-dtt-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/r-dtt-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/r-dtt-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/r-dtt-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/r-dtt-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/r-dtt-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/r-dtt-feedstock)
 
 Current release info
 ====================
