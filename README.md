@@ -1,11 +1,11 @@
-About r-dtt
-===========
+About r-dtt-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-dtt-feedstock/blob/main/LICENSE.txt)
 
 Home: http://www.r-project.org, http://www.komsta.net/
 
 Package license: GPL (>= 2)
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-dtt-feedstock/blob/main/LICENSE.txt)
 
 Summary: This package provides functions for 1D and 2D Discrete Cosine Transform (DCT), Discrete Sine Transform (DST) and Discrete Hartley Transform (DHT).
 
